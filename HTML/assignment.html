@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Student Application Form</title>
+  
+</head>
+<body>
+  <h1>Student Application Form</h1>
+  <form name="applicationForm"  method="post">
+    <table>
+    <tr>
+    <td><label for="name">Name:</label></td>
+    <td><input type="text" id="name" name="name" maxlength="20" required><br></td>
+    </tr>
+    <tr>
+
+    <td><label for="age">Age:</label></td>
+    <td><input type="number" id="age" name="age" required max="40" min="18"><br></td>
+    </tr>
+
+    <tr>
+    <td><label for="gender">Gender:</label></td>
+    <td><input type="radio" id="gender" value="Male" name="gender" required>Male</td>
+    <td><input type="radio" id="gender" value="Female" name="gender" required>Female</td>
+    </tr>
+
+    <tr>
+    <td>Hobbies:</td>
+    <td><input type="checkbox" id="like" value="Tennis" name="any" >Tennis</td>
+    <td><input type="checkbox" id="like" value="Cricket" name="any" >Cricket</td>
+    <td><input type="checkbox" id="like" value="Hockey" name="any" >Hockey</td>
+    </tr>
+
+    <tr>
+    <td><label for="qualifications">Qualifications:</label></td>
+    <td><select id="course" name="course" required>
+      <option value="cg">B.Tech</option>
+      <option value="bh">B.E.</option>
+      <option value="hhbh">M.Tech</option>
+    </select><br></td>
+    </tr>
+
+    <tr>
+    <td><label for="course">Course Applied:</label></td>
+    <td><select id="course" name="course" required>
+      <option value="math">Math</option>
+      <option value="science">Science</option>
+      <option value="history">History</option>
+      <!-- Add more existing courses here -->
+      <option value="new_course">Add New Course</option>
+    </select><br></td>
+    </tr>
+
+    <tr>
+    <td><label for="newCourse">New Course:</label></td>
+    <td><input type="text" id="newCourse" name="newCourse"><br></td>
+    </tr>
+
+    <tr>
+    <td><label for="comments">Comments:</label></td>
+    <td><textarea id="comments" name="comments"></textarea><br></td>
+    </tr>
+
+    <tr>
+    <td><label for="email">Email:</label></td>
+    <td><input type="email" id="email" name="email" required pattern="[^@s\]+@[^@s\]+\.[^@s\]+"><br></td>
+    </tr>
+
+    <tr>
+    <td><label for="phone">Phone Number:</label></td>
+    <td><input type="tel" id="phone" name="phone" required pattern="[0-9]{10}"><br></td>
+    </tr>
+    </table>
+    <input type="submit" value="Submit">
+  </form>
+</body>
+</html>
